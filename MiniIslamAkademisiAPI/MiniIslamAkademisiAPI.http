@@ -1,0 +1,6 @@
+@MiniIslamAkademisiAPI_HostAddress = http://localhost:5124
+
+GET {{MiniIslamAkademisiAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
