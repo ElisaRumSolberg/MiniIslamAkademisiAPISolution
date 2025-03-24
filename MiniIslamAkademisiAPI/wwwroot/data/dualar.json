@@ -1,0 +1,16 @@
+﻿[
+    {
+        "title": "Subhaneke Duası",
+        "description": "Namaza başlarken okunan dua.",
+        "audio": "audio/subhaneke.mp3",
+        "pdf": "pdf/subhaneke.pdf",
+        "video": "https://www.youtube.com/embed/VIDEO_ID1"
+    },
+    {
+        "title": "Fatiha Suresi",
+        "description": "Kur'an-ı Kerim'in ilk suresi.",
+        "audio": "audio/fatiha.mp3",
+        "pdf": "pdf/fatiha.pdf",
+        "video": "https://www.youtube.com/embed/VIDEO_ID2"
+    }
+]
