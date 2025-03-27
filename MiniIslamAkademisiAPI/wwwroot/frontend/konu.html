@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dua & Sureler</title>
+    <title>Konu Detayı</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+    <!-- 🔹 ÜST MENÜ -->
     <nav class="menu">
         <a href="index.html">🕌 Ana Sayfa</a>
         <a href="dualarvesureler.html">📿 Dua & Sureler</a>
@@ -15,18 +16,28 @@
         <a href="peygamberler.html">🧕 Peygamber Hayatları</a>
         <a href="esmaul-husna.html">🌟 Esmaü’l Hüsna</a>
         <a href="egitici-hikayeler.html">📚 Eğitici Hikâyeler</a>
-        <a href="oyunlar.html">🎲 Aktiviteler</a>
+        <a href="oyunlar-aktiviteler.html">🎲 Aktiviteler ve Oyunlar</a>
         <a href="iletisim.html">📩 İletişim</a>
     </nav>
 
-
+    <!-- 🔸 KONU İÇERİĞİ -->
     <main>
-        <h1>📿 Dua ve Sureler</h1>
-        <div id="dua-listesi" class="content-container">
-            <!-- JavaScript ile doldurulacak -->
+        <div class="konu-container">
+            <h1 id="konu-baslik">Yükleniyor...</h1>
+            <p id="konu-aciklama"></p>
+
+            <!-- 📝 Blog yazıları -->
+            <div id="konu-icerik" class="blog-container"></div>
+
+            <!-- 📄 PDF dökümanları -->
+            <div id="konu-pdf" class="pdf-container"></div>
+
+            <!-- 🎥 Videolar -->
+            <div id="konu-video" class="video-container"></div>
         </div>
     </main>
-    <!-- FOOTER / SOSYAL MEDYA -->
+
+    <!-- 🔹 FOOTER -->
     <footer>
         <p>Bizi Takip Et:</p>
         <a href="#">📺 YouTube</a> |
@@ -35,8 +46,6 @@
         <p>&copy; 2025 Mini İslam Akademisi</p>
     </footer>
 
-
-
-    <script src="/frontend/Javascript/dualar.js"></script>
+    <script src="Javascript/konu.js"></script>
 </body>
 </html>

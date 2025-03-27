@@ -1,25 +1,37 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
-// Add services to the container.
+var builder = WebApplication.CreateBuilder(args);
+
+// 1️⃣ Servisleri ekle
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+// 2️⃣ Swagger yapılandırması (model çakışmalarını önler)
+builder.Services.AddSwaggerGen(c =>
+{
+    c.CustomSchemaIds(type => type.FullName); // Model adları aynıysa karışmasın diye
+});
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// 3️⃣ Geliştirme ortamında Swagger'ı etkinleştir
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
 
-// ❗️ Bu satırı ekliyoruz
-app.UseStaticFiles(); // wwwroot klasörüne erişimi açar
+// 4️⃣ wwwroot klasörüne erişim izni (JSON, resim, dosya vs.)
+app.UseStaticFiles();
 
+// 5️⃣ Geri kalan middleware'ler
 app.UseHttpsRedirection();
 app.UseAuthorization();
 
+// 6️⃣ Controller'ları eşleştir
 app.MapControllers();
 
+// 7️⃣ Uygulamayı başlat
 app.Run();

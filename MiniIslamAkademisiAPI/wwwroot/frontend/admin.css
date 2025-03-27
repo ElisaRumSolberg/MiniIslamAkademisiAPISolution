@@ -1,0 +1,82 @@
+﻿body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #fdf2e9;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: white;
+  max-width: 500px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #43a047;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.konu-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e8f5e9;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 600px;
+}
+
+    .konu-item button {
+        margin-left: 10px;
+        padding: 6px 10px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+
+.duzenle-btn {
+    background-color: #fff176;
+}
+
+.sil-btn {
+    background-color: #ef5350;
+    color: white;
+}
+
+
+form button:hover {
+  background-color: #2e7d32;
+}
+
+#mesaj {
+  margin-top: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #00796b;
+}

@@ -1,0 +1,24 @@
+{
+    "namaz": {
+        "id": "namaz",
+        "title": "Namaz",
+        "description": "Namaz, İslam’ın temel ibadetlerinden biridir.",
+        "blog": [
+            {
+                "baslik": "Namaz Nedir?",
+                "icerik": "Namaz Allah’a yöneliştir.",
+                "image": "img/namaz1.jpg"
+            }
+        ],
+        "pdf": [
+            {
+                "ad": "Namaz Rehberi",
+                "url": "pdf/namaz.pdf",
+                "icon": "img/pdf-icon.png"
+            }
+        ],
+        "video": [
+            "https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+        ]
+    }
+}

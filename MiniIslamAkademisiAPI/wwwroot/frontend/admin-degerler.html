@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dinim ve Değerlerim - Admin Paneli</title>
+    <link rel="stylesheet" href="/frontend/admin.css" />
+</head>
+<body>
+    <h1>🛠️ Dinim ve Değerlerim - Admin Paneli</h1>
+
+    <!-- ✅ Veri Giriş Formu -->
+    <form id="admin-form">
+        <label for="ad">Konu Adı (id):</label>
+        <input type="text" id="ad" required />
+
+        <label for="title">Başlık:</label>
+        <input type="text" id="title" required />
+
+        <label for="description">Açıklama:</label>
+        <textarea id="description" required></textarea>
+
+        <label for="blog-content">Blog Yazısı:</label>
+        <textarea id="blog-content"></textarea>
+
+        <label for="video">Video Linki:</label>
+        <input type="url" id="video" />
+
+        <label for="pdf">PDF Linki:</label>
+        <input type="url" id="pdf" />
+
+        <button type="submit">Kaydet</button>
+    </form>
+
+    <!-- ✅ Geri Bildirim Mesajı -->
+    <p id="mesaj"></p>
+
+    <!-- ✅ Mevcut Konular -->
+    <h2>📋 Mevcut Konular</h2>
+    <div id="konu-listesi" class="liste-alani">
+        <!-- Konular JS ile yüklenecek -->
+    </div>
+
+    <!-- ✅ JavaScript -->
+    <script src="/frontend/Javascript/admin-degerler.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+﻿<!-- frontend/admin-dualar.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dualar & Sureler Yönetim</title>
+    <link rel="stylesheet" href="/frontend/admin.css" />
+</head>
+<body>
+    <h1>📿 Dualar & Sureler Yönetim Paneli</h1>
+
+    <form id="dua-form">
+        <input type="text" name="title" placeholder="Dua/Sure Başlığı" required>
+        <input type="text" name="description" placeholder="Açıklama" required>
+        <input type="text" name="audio" placeholder="Ses dosyası URL" required>
+        <input type="text" name="pdf" placeholder="PDF URL">
+        <input type="text" name="video" placeholder="Video URL (YouTube)">
+        <button type="submit">Ekle</button>
+    </form>
+
+
+    <div id="mesaj"></div>
+
+    <h2>📋 Eklenen Konular</h2>
+    <div id="konu-listesi"></div>
+
+</body>
+<script src="/frontend/Javascript/admin-dualar.js"></script>
+</html>

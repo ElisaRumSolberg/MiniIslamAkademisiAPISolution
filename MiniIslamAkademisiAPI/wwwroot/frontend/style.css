@@ -260,6 +260,59 @@ footer {
     gap: 20px;
     padding: 40px;
 }
+/*dinim ve degerlerim*/ 
+.konu-yazi {
+    margin: 20px auto;
+    max-width: 700px;
+    line-height: 1.8;
+    font-size: 1.1em;
+    background-color: #fffdf7;
+    padding: 20px;
+    border-left: 4px solid #81c784;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+.blog-karti {
+    margin-bottom: 15px;
+}
+
+.blog-baslik {
+    cursor: pointer;
+    color: #b71c1c;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+    .blog-baslik:hover {
+        text-decoration: underline;
+    }
+
+.blog-icerik {
+    background-color: #fff7f0;
+    padding: 10px;
+    border-left: 3px solid #a5d6a7;
+    border-radius: 5px;
+}
+.blog-resim {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.pdf-link {
+    display: inline-block;
+    margin: 5px 0;
+    color: #1b5e20;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    .pdf-link:hover {
+        text-decoration: underline;
+    }
+
 
 /* Mobil uyum */
 @media screen and (max-width: 600px) {
