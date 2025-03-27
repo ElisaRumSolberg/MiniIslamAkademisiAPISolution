@@ -1,0 +1,30 @@
+﻿{
+    "dinim": [
+        {
+            "title": "Namaz Nedir?",
+            "description": "Namaz, Allah’a yönelmenin ve O’na kulluğun en güzel yoludur.",
+            "video": "https://www.youtube.com/embed/bhUu-jdIoY0",
+            "pdf": "/pdf/namaz-nedir.pdf"
+        },
+        {
+            "title": "Oruç Tutmak Neden Önemlidir?",
+            "description": "Oruç sabrı, paylaşmayı ve şükrü öğretir.",
+            "video": "https://www.youtube.com/embed/xxt9sNqtaqM",
+            "pdf": "/pdf/oruc-onemi.pdf"
+        }
+    ],
+    "degerlerim": [
+        {
+            "title": "Doğruluk",
+            "description": "Her zaman doğruyu söylemek bir erdemdir.",
+            "video": "https://www.youtube.com/embed/kGMYRx1vA7Y",
+            "pdf": "/pdf/dogruluk.pdf"
+        },
+        {
+            "title": "Sabır",
+            "description": "Zor zamanlarda bile sakin kalmak çok kıymetlidir.",
+            "video": "https://www.youtube.com/embed/T1s0tYztwFY",
+            "pdf": "/pdf/sabir.pdf"
+        }
+    ]
+}

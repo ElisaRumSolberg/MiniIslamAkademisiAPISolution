@@ -1,0 +1,45 @@
+﻿{
+    "namaz": {
+        "title": "Namaz",
+        "description": "Namaz, İslam'ın temel ibadetlerinden biridir.",
+        "blog": [
+            {
+                "baslik": "Namaz Nedir?",
+                "icerik": "Namaz, Allah’a kulluk için günde beş vakit kılınan ibadettir.",
+                "resim": "/img/namaz-nedir.jpg"
+            },
+            {
+                "baslik": "Namazın Faziletleri",
+                "icerik": "Namaz, ruhu arındırır ve kalbi huzurla doldurur.",
+                "resim": "/img/namaz-fazilet.jpg"
+            }
+        ],
+        "video": [
+            "https://www.youtube.com/embed/1fLq96Xjv2A",
+            "https://www.youtube.com/embed/9zBsdghdJrk"
+        ],
+        "pdf": [
+            {
+                "ad": "Namaz Rehberi",
+                "url": "/pdf/namaz-rehberi.pdf",
+                "ikon": "/img/namaz-rehber.png"
+            }
+        ]
+
+    },
+
+    "sabir": {
+        "title": "Sabır",
+        "description": "Sabır, zorluklar karşısında dirençli olma erdemidir.",
+        "blog": "Hayatın iniş çıkışlarına karşı sabırlı olmak, hem psikolojik hem manevi huzur kazandırır. Allah sabredenlerle beraberdir.",
+        "videolar": [
+            "https://www.youtube.com/embed/VIDEO_ID_3"
+        ],
+        "pdfler": [
+            {
+                "ad": "Sabır Üzerine Ayetler",
+                "url": "pdf/sabir-ayetler.pdf"
+            }
+        ]
+    }
+}

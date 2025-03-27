@@ -16,4 +16,9 @@
     </Content>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\frontend\NewFolder1\" />
+    <Folder Include="wwwroot\frontend\NewFolder\" />
+  </ItemGroup>
+
 </Project>
