@@ -1,37 +1,45 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿// Import necessary namespaces for building and running the web application
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
+// Create a new WebApplicationBuilder instance
 var builder = WebApplication.CreateBuilder(args);
 
-// 1️⃣ Servisleri ekle
+// Add support for controllers (used in API structure)
 builder.Services.AddControllers();
+
+// Enable endpoint discovery for minimal API and Swagger support
 builder.Services.AddEndpointsApiExplorer();
 
-// 2️⃣ Swagger yapılandırması (model çakışmalarını önler)
+// Add Swagger generation services (OpenAPI documentation)
 builder.Services.AddSwaggerGen(c =>
 {
-    c.CustomSchemaIds(type => type.FullName); // Model adları aynıysa karışmasın diye
+    // Use full class names to prevent schema name conflicts in Swagger
+    c.CustomSchemaIds(type => type.FullName);
 });
 
+// Build the application from the builder configuration
 var app = builder.Build();
 
-// 3️⃣ Geliştirme ortamında Swagger'ı etkinleştir
+// Enable Swagger and Swagger UI in development environment only
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger();         // Serve Swagger JSON endpoint
+    app.UseSwaggerUI();       // Serve interactive Swagger UI
 }
 
-// 4️⃣ wwwroot klasörüne erişim izni (JSON, resim, dosya vs.)
+// Serve static files (like JSON, CSS, JS, images) from wwwroot folder
 app.UseStaticFiles();
 
-// 5️⃣ Geri kalan middleware'ler
+// Redirect all HTTP requests to HTTPS (for secure communication)
 app.UseHttpsRedirection();
+
+// Enable authorization middleware (checks access permissions)
 app.UseAuthorization();
 
-// 6️⃣ Controller'ları eşleştir
+// Map attribute-routed controllers (e.g., [Route("api/degerler")])
 app.MapControllers();
 
-// 7️⃣ Uygulamayı başlat
+// Start the web application and listen for incoming HTTP requests
 app.Run();
