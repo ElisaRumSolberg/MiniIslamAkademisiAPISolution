@@ -1,35 +1,35 @@
 namespace MiniIslamAkademisiAPI.Models
 {
-    // Represents a blog post with title, content, and optional image
+    //  Represents a blog post with a title, content, and optional image
     public class BlogPost
     {
-        public string Title { get; set; } = string.Empty;       // Blog post title
-        public string Content { get; set; } = string.Empty;     // Blog post content
-        public string? ImageUrl { get; set; }                   // Optional image path
+        public string Title { get; set; } = string.Empty;       // Title of the blog post
+        public string Content { get; set; } = string.Empty;     // Main content of the blog post
+        public string? ImageUrl { get; set; }                   //  URL or path to the blog image
     }
 
-    // Represents a downloadable PDF document
+    //  Represents a downloadable PDF document with a name, file path, and optional icon
     public class PdfDocument
     {
         public string Name { get; set; } = string.Empty;        // Display name of the PDF
-        public string Url { get; set; } = string.Empty;         // Path or URL of the file
-        public string? Icon { get; set; }                       // Optional icon image
+        public string Url { get; set; } = string.Empty;         // File path or URL for downloading/viewing
+        public string? Icon { get; set; }                       // Icon image path
     }
 
-    // Represents a video link
+    //  Represents a video resource, usually a YouTube or embed link
     public class Video
     {
-        public string Url { get; set; } = string.Empty;         // YouTube or embed link
+        public string Url { get; set; } = string.Empty;         // URL to the video (YouTube, Vimeo, etc.)
     }
 
-    // Represents a full topic (e.g., "Prayer", "Patience") with related resources
+    //  Represents a full topic with ID, title, description, blog posts, PDFs, and videos
     public class TopicDetail
     {
-        public string Id { get; set; } = string.Empty;                     // Unique identifier for routing
-        public string Title { get; set; } = string.Empty;                 // Main title of the topic
-        public string Description { get; set; } = string.Empty;           // Short explanation
-        public List<BlogPost> BlogPosts { get; set; } = new();            // List of blog posts
-        public List<PdfDocument> Pdfs { get; set; } = new();              // List of PDF documents
-        public List<string> Videos { get; set; } = new();                 // List of YouTube links
+        public string Id { get; set; } = string.Empty;                     // Unique key for identifying the topic (used in routing)
+        public string Title { get; set; } = string.Empty;                 // Title of the topic (e.g., Prayer, Patience)
+        public string Description { get; set; } = string.Empty;           // Short description or introduction to the topic
+        public List<BlogPost> BlogPosts { get; set; } = new();            // List of blog posts related to the topic
+        public List<PdfDocument> Pdfs { get; set; } = new();              // List of downloadable PDF files
+        public List<string> Videos { get; set; } = new();                 // List of video URLs associated with the topic
     }
 }
