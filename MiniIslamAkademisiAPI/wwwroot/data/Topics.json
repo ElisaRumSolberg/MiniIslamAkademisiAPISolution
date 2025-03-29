@@ -1,0 +1,46 @@
+{
+  "namaz": {
+    "id": "namaz",
+    "title": "Namaz",
+    "description": "Namaz, İslam’ın temel ibadetlerinden biridir.",
+    "blogPosts": [
+      {
+        "title": "Namaz Nedir?",
+        "content": "Namaz Allah’a yöneliştir.",
+        "imageUrl": "img/namaz1.jpg"
+      }
+    ],
+    "pdfs": [
+      {
+        "name": "Namaz Rehberi",
+        "url": "pdf/namaz.pdf",
+        "icon": "img/pdf-icon.png"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"
+    ]
+  },
+  "sabir": {
+    "id": "sabir",
+    "title": "Sabır",
+    "description": "Sabır, zorluklar karşısında dirençli olma erdemidir.",
+    "blogPosts": [
+      {
+        "title": "Sabır Nedir?",
+        "content": "Hayatın iniş çıkışlarına karşı sabırlı olmak huzur getirir.",
+        "imageUrl": "img/sabir.jpg"
+      }
+    ],
+    "pdfs": [
+      {
+        "name": "Sabır Üzerine Ayetler",
+        "url": "pdf/sabir.pdf",
+        "icon": "img/pdf-icon.png"
+      }
+    ],
+    "videos": [
+      "https://www.youtube.com/embed/VIDEO_ID_3"
+    ]
+  }
+}
